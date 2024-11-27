@@ -39,7 +39,7 @@ for (x, y, w, h) in faces:
     for (x2, y2, w2, h2) in smile:
         cv2.rectangle(roi_color, (x2, y2), (x2+w2, y2+h2), (255, 0, 0), 2)
         cv2.putText(img,'Smile',(x,y-7), 3, 1.2, (0, 255, 0), 2, cv2.LINE_AA)
-
+#show the smile detector
 cv2.imshow('Smile Detector:', img)
 
 c = cv2.waitKey(0)
